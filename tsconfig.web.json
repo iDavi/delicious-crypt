@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "docs/js"
+  },
+  "include": ["src/codec.ts", "src/recipe.ts", "src/api.ts", "src/web.ts"]
+}

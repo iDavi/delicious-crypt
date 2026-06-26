@@ -1,0 +1,21 @@
+{
+  "name": "delicious-crypt",
+  "version": "1.0.0",
+  "description": "Hide an encrypted message inside a plausible recipe.",
+  "type": "module",
+  "bin": {
+    "recipe-crypt": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.web.json",
+    "start": "node dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "typescript": "^5.0.0"
+  }
+}

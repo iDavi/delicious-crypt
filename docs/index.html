@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>delicious-crypt</title>
+</head>
+<body>
+<h1>delicious-crypt</h1>
+<p>Hide a short message inside a recipe. The recipe reads normally; paste it back to read the message.</p>
+
+<h2>Encrypt</h2>
+<p><label>Message<br><textarea id="msg" rows="2" cols="50">meet at six</textarea></label></p>
+<p><label>Language
+  <select id="lang"><option value="en">English</option><option value="pt">Português</option></select>
+</label></p>
+<p><button id="enc">Make recipe</button></p>
+<p><textarea id="recipe" rows="22" cols="50" placeholder="recipe appears here"></textarea></p>
+
+<h2>Decrypt</h2>
+<p>Paste a recipe above (or your own) and read it back.</p>
+<p><button id="dec">Read message</button></p>
+<p><textarea id="out" rows="2" cols="50" placeholder="message appears here"></textarea></p>
+
+<script type="module" src="./js/web.js"></script>
+</body>
+</html>
