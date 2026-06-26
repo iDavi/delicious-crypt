@@ -15,7 +15,8 @@ thing real recipes vary. Decoding reads the same choices back in the same order.
 No password. The recipe is the message; anyone with this tool can read it. It
 hides in plain sight, it does not protect against someone who knows the scheme.
 
-Limit: about 11 bytes per recipe (`MAX_BYTES`).
+A recipe holds about 11 bytes. Longer messages are split into several recipes (a
+recipe collection); decoding joins them back, so there is no fixed length limit.
 
 ## CLI
 
@@ -41,4 +42,4 @@ GitHub Pages serves `docs/`. Open `docs/index.html` (no build needed once
 Esconde uma mensagem curta dentro de uma receita de bolo e lê de volta. A
 mensagem vira um número e é espalhada por todas as escolhas da receita (nomes dos
 ingredientes, quantidades, tempos, passos). Sem senha: a receita é a mensagem.
-Limite de cerca de 11 bytes por receita.
+Cada receita guarda ~11 bytes; mensagens maiores viram várias receitas.
